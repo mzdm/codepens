@@ -152,19 +152,27 @@ class _SongPageState extends State<SongPage> with SingleTickerProviderStateMixin
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   IconButton(
-                    icon: Image.asset(
-                      'network_images/spotify_icon.png',
+                    icon: Image.network(
+                      'https://raw.githubusercontent.com/mzdm/codepens/master/music_album_stats/network_images/spotify_icon.png',
                       height: 28.0,
                     ),
+//                    icon: Image.asset(
+//                      'network_images/spotify_icon.png',
+//                      height: 28.0,
+//                    ),
                     tooltip: 'Spotify',
                     onPressed: () {},
                   ),
                   SizedBox(width: 20.0),
                   IconButton(
-                    icon: Image.asset(
-                      'network_images/yt_icon.png',
+                    icon: Image.network(
+                      'https://raw.githubusercontent.com/mzdm/codepens/master/music_album_stats/network_images/yt_icon.png',
                       height: 28.0,
                     ),
+//                    icon: Image.asset(
+//                      'network_images/yt_icon.png',
+//                      height: 28.0,
+//                    ),
                     tooltip: 'YouTube',
                     onPressed: () {},
                   ),
@@ -176,7 +184,8 @@ class _SongPageState extends State<SongPage> with SingleTickerProviderStateMixin
                 width: double.infinity,
                 child: Text(
                   'Statistics',
-                  style: Theme.of(context).textTheme.headline5.copyWith(fontWeight: FontWeight.w600),
+                  style:
+                      Theme.of(context).textTheme.headline5.copyWith(fontWeight: FontWeight.w600),
                 ),
               ),
               SizedBox(height: 18.0),
