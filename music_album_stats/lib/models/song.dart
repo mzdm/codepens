@@ -33,9 +33,8 @@ class Song {
 
   bool get isFavorite => _isFavorite;
 
-  String get assetUrl => 'www.github.com/$assetName';
-
-  String get assetUrlOld => 'www.imgur.com/$assetName';
+  String get assetUrl =>
+      'https://raw.githubusercontent.com/mzdm/codepens/master/music_album_stats/network_images/$assetName';
 
   @override
   bool operator ==(Object other) =>

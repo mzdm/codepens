@@ -27,7 +27,8 @@ class TopCard extends StatelessWidget {
               decoration: BoxDecoration(
                 image: DecorationImage(
                   fit: BoxFit.cover,
-                  image: AssetImage('network_images/${songItem.assetName}'),
+                  image: NetworkImage(songItem.assetUrl),
+//                  image: AssetImage('network_images/${songItem.assetName}'),
                 ),
               ),
             ),

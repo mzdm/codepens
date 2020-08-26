@@ -37,7 +37,8 @@ class _RecommendedListTileState extends State<RecommendedListTile> {
                   ? BoxDecoration(
                       image: DecorationImage(
                         fit: BoxFit.cover,
-                        image: AssetImage('network_images/${widget.songItem.assetName}'),
+                        image: NetworkImage(widget.songItem.assetUrl),
+//                        image: AssetImage('network_images/${widget.songItem.assetName}'),
                       ),
                     )
                   : ShapeDecoration(
