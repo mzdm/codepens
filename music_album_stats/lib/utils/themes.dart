@@ -23,9 +23,8 @@ class ThemesUtils {
         selectedItemColor: ColorsUtils.orange,
       ),
       textSelectionTheme: TextSelectionThemeData(
-        selectionColor: ColorsUtils.orange
+        selectionColor: ColorsUtils.orange,
       ),
-      highlightColor: ColorsUtils.orange,
       buttonTheme: ButtonThemeData(
         textTheme: ButtonTextTheme.primary,
       ),

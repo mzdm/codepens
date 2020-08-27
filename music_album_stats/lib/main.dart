@@ -43,6 +43,9 @@ class _MainAppState extends State<MainApp> with SingleTickerProviderStateMixin {
       vsync: this,
     );
     _tabController.addListener(() => setState(() => _activeTabIndex = _tabController.index));
+    if (_activeTabIndex != null && _activeTabIndex == 3) {
+      _tabController.animateTo(_activeTabIndex);
+    }
     super.initState();
   }
 
@@ -112,8 +115,13 @@ class _MainAppState extends State<MainApp> with SingleTickerProviderStateMixin {
   }
 
   Widget webSideMenu() {
-    return SizedBox(
+    final themeProvider = ThemeStateContainer.of(context);
+
+    return Container(
+      height: double.infinity,
       width: 200.0,
+      color:
+          themeProvider.isDarkMode ? Colors.black.withOpacity(0.3) : null,
       child: ListView(
         shrinkWrap: true,
         children: <Widget>[
